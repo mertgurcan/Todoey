@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Item {
+//Encodable means item type can encode himself to json or plist
+class Item: Encodable, Decodable {
     var title : String = ""
     var done : Bool = false
 }
