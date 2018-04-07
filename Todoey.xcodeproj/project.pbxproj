@@ -11,6 +11,7 @@
 		FC938F1A2071B4160075729D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938F192071B4160075729D /* CategoryViewController.swift */; };
 		FC938F1E207507B20075729D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938F1D207507B20075729D /* Item.swift */; };
 		FC938F20207507CC0075729D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938F1F207507CC0075729D /* Category.swift */; };
+		FC938F22207822570075729D /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938F21207822570075729D /* SwipeTableViewController.swift */; };
 		FCB016B4206B182E0083E10C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB016B3206B182E0083E10C /* AppDelegate.swift */; };
 		FCB016B6206B182E0083E10C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB016B5206B182E0083E10C /* TodoListViewController.swift */; };
 		FCB016B9206B182E0083E10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB016B7206B182E0083E10C /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		FC938F192071B4160075729D /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		FC938F1D207507B20075729D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FC938F1F207507CC0075729D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FC938F21207822570075729D /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		FCB016B0206B182E0083E10C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB016B3206B182E0083E10C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB016B5206B182E0083E10C /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +68,8 @@
 		FC3D4175206F03CA00A2F0B0 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC938F1D207507B20075729D /* Item.swift */,
 				FC938F1F207507CC0075729D /* Category.swift */,
+				FC938F1D207507B20075729D /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -77,6 +79,7 @@
 			children = (
 				FC938F192071B4160075729D /* CategoryViewController.swift */,
 				FCB016B5206B182E0083E10C /* TodoListViewController.swift */,
+				FC938F21207822570075729D /* SwipeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,13 +210,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,6 +271,7 @@
 				FC938F1A2071B4160075729D /* CategoryViewController.swift in Sources */,
 				FCB016B6206B182E0083E10C /* TodoListViewController.swift in Sources */,
 				FCB016B4206B182E0083E10C /* AppDelegate.swift in Sources */,
+				FC938F22207822570075729D /* SwipeTableViewController.swift in Sources */,
 				FC938F20207507CC0075729D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

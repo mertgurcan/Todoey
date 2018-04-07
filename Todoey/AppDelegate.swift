@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }catch{
             print("Error initialing realm, \(error)")
         }
-       
+        
         return true
     }
 
